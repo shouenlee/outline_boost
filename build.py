@@ -3,6 +3,8 @@ import os
 import sys
 import shutil
  
+default_build_artifact_directory = "aarch64-unknown-linux-gnu"
+
 def build_swift(directory, clean):
     try:
         # Change the current working directory to the specified directory
@@ -18,8 +20,7 @@ def build_swift(directory, clean):
         print(f"Build succeeded for {directory}!")
 
         # move binaries to Release folder
-        architecture = "x86_64-apple-macosx"
-        source = f".build/{architecture}/release/{directory}"
+        source = f".build/{default_build_artifact_directory}/release/{directory}"
         destination = "../Release"
 
         # check if source file exists
