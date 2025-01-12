@@ -10,6 +10,7 @@ scan and transform: https://github.com/docongminh/scan-document/blob/master/READ
 
 phil_3_vision_mlx docs: https://josefalbers.github.io/Phi-3-Vision-MLX/module.html#functions
 
+azure ai document intelligence sdk: https://learn.microsoft.com/en-us/python/api/azure-ai-documentintelligence/azure.ai.documentintelligence.models?view=azure-python-preview
 
 Plan:
 1. retrieval all paragraphs in the outline
