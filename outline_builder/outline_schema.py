@@ -165,7 +165,9 @@ class BuilderUtils:
                     raise ValueError("Lowercase point found without a parent Arabic numeral.")
                 curr_parent.add_subpoint(curr_point)
             else:
-                raise ValueError(f"Unknown paragraph type: {paragraph}")
+                print(f"Unknown paragraph type: {paragraph}. Omitted from outline.")
+                continue
+                #raise ValueError(f"Unknown paragraph type: {paragraph}")
             point_stack.append(curr_point)
             prev_point = curr_point
 
@@ -230,19 +232,10 @@ class BuilderUtils:
         outline["message_title"] = message_title if message_title else ""
         outline["scripture_reading"] = scripture_reading if scripture_reading else []
 
-        for paragraph in outline_points:
-            pt_number = None
-            if BuilderUtils.is_roman_numeral(paragraph):
-                pt_number = BuilderUtils.extract_roman_numeral(paragraph)
-            elif BuilderUtils.is_capital_point(paragraph):
-                pt_number = BuilderUtils.extract_capital_point(paragraph)
-            elif BuilderUtils.is_arabic_numeral(paragraph):
-                pt_number = BuilderUtils.extract_arabic_numeral(paragraph)
-            elif BuilderUtils.is_lowercase_point(paragraph):
-                pt_number = BuilderUtils.extract_lowercase_point(paragraph)
-            else:
-                pt_number = "Unknown"
 
-            outline[pt_number] = paragraph
-
+        for index, paragraph in enumerate(outline_points):
+            if not (BuilderUtils.is_roman_numeral(paragraph) or BuilderUtils.is_capital_point(paragraph) or BuilderUtils.is_arabic_numeral(paragraph) or BuilderUtils.is_lowercase_point(paragraph)):
+                print(f"Unknown paragraph type: {paragraph}. Omitted from json representation.")
+                continue
+            outline[index] = paragraph
         return json.dumps(outline, indent=4)
