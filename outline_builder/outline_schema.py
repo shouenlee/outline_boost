@@ -54,12 +54,45 @@ class OutlineSchema:
         self.roman_numerals = BuilderUtils.build_content_tree(paragraphs[first_roman_numeral_index:])
 
     def print_tree(self) -> None:
+        print(f"Conference Title: {self.conference_title}")
+        print(f"Message Number: {self.message_number}")
+        print(f"Message Title: {self.message_title}")
+        print(f"Scripture Reading: {self.scripture_reading}")
+
         def print_point(point: OutlineBlock, indent=0):
             print(indent * " " + point.content)
             for subpoint in point.subpoints:
                 print_point(subpoint, indent + 4)
         for roman_numeral in self.roman_numerals:
             print_point(roman_numeral)
+
+    def to_markdown(self, filename="outline") -> None:
+        from mdutils import MdUtils
+        def add_heading(heading: str, level: int):
+            h = "#" * level
+            mdFile.new_line(f"{h} {heading}")
+        mdFile = MdUtils(filename)
+        add_heading(self.conference_title, 3)
+        add_heading(self.message_number, 3)
+        add_heading(self.message_title, 1)
+        add_heading(self.scripture_reading, 3)
+
+        def add_point_to_md(point: OutlineBlock, indent=0):
+            #mdFile.new_line(indent * " " + point.content)
+            content = point.content
+            if point.type == OutlineBlockType.ROMAN_NUMERAL:
+                content = f"**{content}**"
+            ind_offset = ">" * indent
+            mdFile.new_paragraph(ind_offset + content)
+
+            for subpoint in point.subpoints:
+                add_point_to_md(subpoint, indent + 1)
+
+        for roman_numeral in self.roman_numerals:
+            add_point_to_md(roman_numeral)
+
+        mdFile.create_md_file()
+
 
     def __str__(self) -> str:
         return f"Conference Title: {self.conference_title}\nMessage Number: {self.message_number}\nMessage Title: {self.message_title}\nScripture Reading: {self.scripture_reading}\nRoman Numerals: {self.roman_numerals}"
@@ -144,7 +177,7 @@ class BuilderUtils:
         return True if re.match(r'^\b[IVX]+\.', paragraph) else False # Assuming we will not use L, C, D, M
     
     def is_roman_numeral_not_I(paragraph: str) -> bool:
-        any_rom_num = BuilderUtils.is_rom_numeral(paragraph)
+        any_rom_num = BuilderUtils.is_roman_numeral(paragraph)
         i = re.match(r'^\bI\.', paragraph)
         return True if any_rom_num and not i else False
 
