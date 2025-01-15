@@ -21,7 +21,15 @@ def document_paragraph_to_content_list(paragraphs):
         content_list.append(paragraph.content)
     return content_list
 
-def analyze_read():
+def find_jpg_files(directory):
+    jpg_files = []
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            if file.lower().endswith('.jpg'):
+                jpg_files.append(os.path.join(root, file))
+    return sorted(jpg_files)
+
+def analyze_read(images_path):
     from azure.core.credentials import AzureKeyCredential
     from azure.ai.documentintelligence import DocumentIntelligenceClient
     from azure.ai.documentintelligence.models import DocumentAnalysisFeature, AnalyzeResult, AnalyzeDocumentRequest
@@ -31,7 +39,7 @@ def analyze_read():
     #endpoint = os.environ["DOCUMENTINTELLIGENCE_ENDPOINT"]
     #key = os.environ["DOCUMENTINTELLIGENCE_API_KEY"]
 
-    endpoint = "https://ai-verseapp434316061029.cognitiveservices.azure.com/"
+    endpoint = ""
     key = ""
 
     document_intelligence_client = DocumentIntelligenceClient(endpoint=endpoint, credential=AzureKeyCredential(key))
@@ -39,15 +47,28 @@ def analyze_read():
     # If analyzing a local document, remove the comment markers (#) at the beginning of these 11 lines.
     # Delete or comment out the part of "Analyze a document at a URL" above.
     # Replace <path to your sample file>  with your actual file path.
-    path_to_sample_document = "msg4.jpg"
-    with open(path_to_sample_document, "rb") as f:
-        poller = document_intelligence_client.begin_analyze_document(
-            "prebuilt-read",
-            body=f,
-            features=[DocumentAnalysisFeature.LANGUAGES],
-            content_type="application/octet-stream",
-        )
-    result: AnalyzeResult = poller.result()
+
+    paragraphs = []
+    image_paths = find_jpg_files(images_path)
+    print(f"Found images: {image_paths} to analyze")
+    for image_path in image_paths:
+        with open(image_path, "rb") as f:
+            poller = document_intelligence_client.begin_analyze_document(
+                "prebuilt-read",
+                body=f,
+                features=[DocumentAnalysisFeature.LANGUAGES]
+            )
+        result: AnalyzeResult = poller.result()
+        paragraphs.extend(result.paragraphs)
+
+    # with open(path_to_sample_document, "rb") as f:
+    #     poller = document_intelligence_client.begin_analyze_document(
+    #         "prebuilt-read",
+    #         body=f,
+    #         features=[DocumentAnalysisFeature.LANGUAGES],
+    #         content_type="application/octet-stream",
+    #     )
+    # result: AnalyzeResult = poller.result()
     
     # [START analyze_read]
     # Detect languages.
@@ -88,7 +109,7 @@ def analyze_read():
         
     print("----------------------------------------")
     # [END analyze_read]
-    return result
+    return paragraphs
 
 # Next steps:
 # Learn more about Layout model: https://aka.ms/di-read
