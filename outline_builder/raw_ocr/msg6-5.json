@@ -1,0 +1,3550 @@
+{
+    "apiVersion": "2024-11-30",
+    "modelId": "prebuilt-read",
+    "stringIndexType": "textElements",
+    "content": "1. When we turn our heart to the Lord to behold and reflect the glory of the Lord with an unveiled face, He infuses us with the elements of what He is and what He has done.\n2. Thus, we are being transformed metabolically from one degree of glory to another degree of glory to have His life shape by His life power with His life essence.\nI. The transmitting Spirit transmits all that Christ is with all the riches of God into us for our participation-13:14:\n1. God is love, and this love is being transmitted as grace into us by the Spirit, who is the Transmitter.\n2. The Spirit is the fellowship, the communication, the circula- tion, the transmission of the grace of Christ with the love of the Father, transmitting the divine riches into our being for our enjoyment.\nOS:& Basil sud I noyn For\n8\nBUS y-eindo jamy bort OUT)\n18 20 10 900",
+    "pages": [
+        {
+            "pageNumber": 1,
+            "angle": -0.13050000369548798,
+            "width": 3024,
+            "height": 4032,
+            "unit": "pixel",
+            "words": [
+                {
+                    "content": "1.",
+                    "polygon": [
+                        314,
+                        166,
+                        419,
+                        163,
+                        418,
+                        243,
+                        313,
+                        245
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 0,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "When",
+                    "polygon": [
+                        442,
+                        162,
+                        670,
+                        156,
+                        669,
+                        237,
+                        440,
+                        242
+                    ],
+                    "confidence": 0.989,
+                    "span": {
+                        "offset": 3,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "we",
+                    "polygon": [
+                        689,
+                        155,
+                        798,
+                        153,
+                        797,
+                        235,
+                        688,
+                        237
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 8,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "turn",
+                    "polygon": [
+                        818,
+                        152,
+                        997,
+                        149,
+                        996,
+                        232,
+                        817,
+                        235
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 11,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "our",
+                    "polygon": [
+                        1019,
+                        148,
+                        1152,
+                        146,
+                        1151,
+                        230,
+                        1017,
+                        231
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 16,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "heart",
+                    "polygon": [
+                        1172,
+                        146,
+                        1388,
+                        144,
+                        1387,
+                        228,
+                        1171,
+                        230
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 20,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "to",
+                    "polygon": [
+                        1408,
+                        143,
+                        1484,
+                        143,
+                        1483,
+                        227,
+                        1408,
+                        228
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 26,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "the",
+                    "polygon": [
+                        1507,
+                        143,
+                        1634,
+                        143,
+                        1634,
+                        227,
+                        1506,
+                        227
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 29,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Lord",
+                    "polygon": [
+                        1659,
+                        143,
+                        1845,
+                        143,
+                        1845,
+                        227,
+                        1658,
+                        227
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 33,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "to",
+                    "polygon": [
+                        1867,
+                        143,
+                        1941,
+                        143,
+                        1940,
+                        227,
+                        1866,
+                        227
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 38,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "behold",
+                    "polygon": [
+                        1964,
+                        143,
+                        2227,
+                        146,
+                        2227,
+                        228,
+                        1963,
+                        227
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 41,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "and",
+                    "polygon": [
+                        2250,
+                        146,
+                        2397,
+                        148,
+                        2396,
+                        230,
+                        2250,
+                        229
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 48,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "reflect",
+                    "polygon": [
+                        2417,
+                        148,
+                        2674,
+                        153,
+                        2674,
+                        234,
+                        2417,
+                        230
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 52,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "the",
+                    "polygon": [
+                        2694,
+                        154,
+                        2823,
+                        157,
+                        2823,
+                        236,
+                        2694,
+                        234
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 60,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "glory",
+                    "polygon": [
+                        426,
+                        264,
+                        638,
+                        259,
+                        638,
+                        347,
+                        426,
+                        352
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 64,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "of",
+                    "polygon": [
+                        666,
+                        258,
+                        742,
+                        256,
+                        742,
+                        344,
+                        666,
+                        346
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 70,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "the",
+                    "polygon": [
+                        759,
+                        256,
+                        893,
+                        254,
+                        893,
+                        341,
+                        759,
+                        344
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 73,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Lord",
+                    "polygon": [
+                        925,
+                        253,
+                        1112,
+                        250,
+                        1112,
+                        337,
+                        925,
+                        340
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 77,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "with",
+                    "polygon": [
+                        1143,
+                        250,
+                        1324,
+                        248,
+                        1324,
+                        334,
+                        1143,
+                        336
+                    ],
+                    "confidence": 0.989,
+                    "span": {
+                        "offset": 82,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "an",
+                    "polygon": [
+                        1356,
+                        248,
+                        1454,
+                        247,
+                        1454,
+                        332,
+                        1356,
+                        333
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 87,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "unveiled",
+                    "polygon": [
+                        1486,
+                        247,
+                        1830,
+                        246,
+                        1830,
+                        330,
+                        1486,
+                        332
+                    ],
+                    "confidence": 0.993,
+                    "span": {
+                        "offset": 90,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "face,",
+                    "polygon": [
+                        1860,
+                        246,
+                        2038,
+                        247,
+                        2038,
+                        330,
+                        1860,
+                        330
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 99,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "He",
+                    "polygon": [
+                        2071,
+                        247,
+                        2184,
+                        248,
+                        2184,
+                        331,
+                        2071,
+                        330
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 105,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "infuses",
+                    "polygon": [
+                        2216,
+                        248,
+                        2497,
+                        252,
+                        2497,
+                        333,
+                        2216,
+                        331
+                    ],
+                    "confidence": 0.993,
+                    "span": {
+                        "offset": 108,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "us",
+                    "polygon": [
+                        2528,
+                        252,
+                        2618,
+                        254,
+                        2618,
+                        335,
+                        2528,
+                        334
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 116,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "with",
+                    "polygon": [
+                        2647,
+                        255,
+                        2828,
+                        258,
+                        2828,
+                        338,
+                        2647,
+                        335
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 119,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "the",
+                    "polygon": [
+                        428,
+                        366,
+                        561,
+                        363,
+                        561,
+                        447,
+                        428,
+                        448
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 124,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "elements",
+                    "polygon": [
+                        590,
+                        362,
+                        943,
+                        356,
+                        943,
+                        441,
+                        590,
+                        446
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 128,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "of",
+                    "polygon": [
+                        973,
+                        356,
+                        1047,
+                        354,
+                        1048,
+                        439,
+                        974,
+                        440
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 137,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "what",
+                    "polygon": [
+                        1063,
+                        354,
+                        1272,
+                        352,
+                        1272,
+                        437,
+                        1064,
+                        439
+                    ],
+                    "confidence": 0.989,
+                    "span": {
+                        "offset": 140,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "He",
+                    "polygon": [
+                        1299,
+                        352,
+                        1411,
+                        351,
+                        1412,
+                        436,
+                        1300,
+                        437
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 145,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "is",
+                    "polygon": [
+                        1437,
+                        351,
+                        1506,
+                        350,
+                        1507,
+                        435,
+                        1438,
+                        436
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 148,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "and",
+                    "polygon": [
+                        1536,
+                        350,
+                        1684,
+                        350,
+                        1685,
+                        434,
+                        1537,
+                        435
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 151,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "what",
+                    "polygon": [
+                        1711,
+                        350,
+                        1916,
+                        350,
+                        1917,
+                        433,
+                        1712,
+                        434
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 155,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "He",
+                    "polygon": [
+                        1943,
+                        350,
+                        2054,
+                        350,
+                        2055,
+                        434,
+                        1944,
+                        433
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 160,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "has",
+                    "polygon": [
+                        2083,
+                        351,
+                        2222,
+                        351,
+                        2224,
+                        434,
+                        2084,
+                        434
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 163,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "done.",
+                    "polygon": [
+                        2252,
+                        352,
+                        2457,
+                        354,
+                        2457,
+                        435,
+                        2254,
+                        434
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 167,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "2.",
+                    "polygon": [
+                        302,
+                        476,
+                        386,
+                        474,
+                        385,
+                        558,
+                        300,
+                        558
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 173,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "Thus,",
+                    "polygon": [
+                        439,
+                        473,
+                        649,
+                        468,
+                        647,
+                        553,
+                        437,
+                        557
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 176,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "we",
+                    "polygon": [
+                        667,
+                        467,
+                        776,
+                        466,
+                        774,
+                        551,
+                        666,
+                        553
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 182,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "are",
+                    "polygon": [
+                        797,
+                        465,
+                        922,
+                        463,
+                        920,
+                        549,
+                        796,
+                        551
+                    ],
+                    "confidence": 0.993,
+                    "span": {
+                        "offset": 185,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "being",
+                    "polygon": [
+                        940,
+                        463,
+                        1147,
+                        460,
+                        1146,
+                        547,
+                        939,
+                        549
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 189,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "transformed",
+                    "polygon": [
+                        1164,
+                        460,
+                        1661,
+                        456,
+                        1660,
+                        545,
+                        1163,
+                        547
+                    ],
+                    "confidence": 0.993,
+                    "span": {
+                        "offset": 195,
+                        "length": 11
+                    }
+                },
+                {
+                    "content": "metabolically",
+                    "polygon": [
+                        1678,
+                        456,
+                        2205,
+                        458,
+                        2204,
+                        546,
+                        1677,
+                        545
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 207,
+                        "length": 13
+                    }
+                },
+                {
+                    "content": "from",
+                    "polygon": [
+                        2224,
+                        458,
+                        2408,
+                        459,
+                        2407,
+                        548,
+                        2222,
+                        547
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 221,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "one",
+                    "polygon": [
+                        2428,
+                        460,
+                        2562,
+                        461,
+                        2561,
+                        550,
+                        2427,
+                        548
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 226,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "degree",
+                    "polygon": [
+                        2582,
+                        462,
+                        2845,
+                        466,
+                        2845,
+                        554,
+                        2581,
+                        550
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 230,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "of",
+                    "polygon": [
+                        430,
+                        582,
+                        511,
+                        581,
+                        510,
+                        662,
+                        429,
+                        663
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 237,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "glory",
+                    "polygon": [
+                        530,
+                        580,
+                        730,
+                        576,
+                        729,
+                        657,
+                        529,
+                        661
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 240,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "to",
+                    "polygon": [
+                        756,
+                        576,
+                        832,
+                        574,
+                        831,
+                        654,
+                        754,
+                        656
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 246,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "another",
+                    "polygon": [
+                        864,
+                        574,
+                        1176,
+                        570,
+                        1175,
+                        649,
+                        863,
+                        654
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 249,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "degree",
+                    "polygon": [
+                        1205,
+                        569,
+                        1468,
+                        567,
+                        1467,
+                        646,
+                        1204,
+                        649
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 257,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "of",
+                    "polygon": [
+                        1501,
+                        567,
+                        1583,
+                        567,
+                        1582,
+                        646,
+                        1500,
+                        646
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 264,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "glory",
+                    "polygon": [
+                        1603,
+                        567,
+                        1806,
+                        566,
+                        1805,
+                        645,
+                        1602,
+                        646
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 267,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "to",
+                    "polygon": [
+                        1834,
+                        566,
+                        1910,
+                        566,
+                        1909,
+                        646,
+                        1832,
+                        645
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 273,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "have",
+                    "polygon": [
+                        1940,
+                        566,
+                        2129,
+                        567,
+                        2128,
+                        647,
+                        1939,
+                        646
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 276,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "His",
+                    "polygon": [
+                        2161,
+                        567,
+                        2298,
+                        568,
+                        2297,
+                        649,
+                        2160,
+                        647
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 281,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "life",
+                    "polygon": [
+                        2328,
+                        568,
+                        2456,
+                        569,
+                        2455,
+                        651,
+                        2327,
+                        649
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 285,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "shape",
+                    "polygon": [
+                        2489,
+                        570,
+                        2720,
+                        573,
+                        2719,
+                        655,
+                        2488,
+                        651
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 290,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "by",
+                    "polygon": [
+                        2747,
+                        573,
+                        2844,
+                        575,
+                        2844,
+                        658,
+                        2746,
+                        656
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 296,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "His",
+                    "polygon": [
+                        425,
+                        684,
+                        564,
+                        681,
+                        561,
+                        768,
+                        422,
+                        769
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 299,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "life",
+                    "polygon": [
+                        591,
+                        680,
+                        719,
+                        677,
+                        717,
+                        766,
+                        588,
+                        768
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 303,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "power",
+                    "polygon": [
+                        748,
+                        677,
+                        990,
+                        672,
+                        988,
+                        762,
+                        745,
+                        766
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 308,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "with",
+                    "polygon": [
+                        1013,
+                        672,
+                        1197,
+                        670,
+                        1196,
+                        759,
+                        1011,
+                        762
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 314,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "His",
+                    "polygon": [
+                        1226,
+                        669,
+                        1364,
+                        668,
+                        1363,
+                        756,
+                        1224,
+                        758
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 319,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "life",
+                    "polygon": [
+                        1392,
+                        668,
+                        1522,
+                        668,
+                        1521,
+                        753,
+                        1391,
+                        755
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 323,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "essence.",
+                    "polygon": [
+                        1553,
+                        668,
+                        1875,
+                        668,
+                        1875,
+                        746,
+                        1552,
+                        752
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 328,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "I.",
+                    "polygon": [
+                        168,
+                        795,
+                        249,
+                        793,
+                        246,
+                        875,
+                        165,
+                        875
+                    ],
+                    "confidence": 0.991,
+                    "span": {
+                        "offset": 337,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "The",
+                    "polygon": [
+                        291,
+                        792,
+                        443,
+                        789,
+                        441,
+                        874,
+                        288,
+                        875
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 340,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "transmitting",
+                    "polygon": [
+                        469,
+                        788,
+                        982,
+                        780,
+                        980,
+                        869,
+                        466,
+                        873
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 344,
+                        "length": 12
+                    }
+                },
+                {
+                    "content": "Spirit",
+                    "polygon": [
+                        1007,
+                        780,
+                        1238,
+                        777,
+                        1236,
+                        867,
+                        1005,
+                        869
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 357,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "transmits",
+                    "polygon": [
+                        1263,
+                        777,
+                        1657,
+                        775,
+                        1656,
+                        864,
+                        1261,
+                        867
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 364,
+                        "length": 9
+                    }
+                },
+                {
+                    "content": "all",
+                    "polygon": [
+                        1689,
+                        775,
+                        1789,
+                        775,
+                        1787,
+                        864,
+                        1688,
+                        864
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 374,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "that",
+                    "polygon": [
+                        1815,
+                        775,
+                        1986,
+                        775,
+                        1985,
+                        863,
+                        1814,
+                        864
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 378,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "Christ",
+                    "polygon": [
+                        2014,
+                        776,
+                        2268,
+                        777,
+                        2267,
+                        862,
+                        2013,
+                        863
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 383,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "is",
+                    "polygon": [
+                        2293,
+                        777,
+                        2359,
+                        778,
+                        2358,
+                        862,
+                        2293,
+                        862
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 390,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "with",
+                    "polygon": [
+                        2384,
+                        778,
+                        2567,
+                        780,
+                        2567,
+                        861,
+                        2384,
+                        862
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 393,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "all",
+                    "polygon": [
+                        2595,
+                        780,
+                        2695,
+                        782,
+                        2694,
+                        861,
+                        2595,
+                        861
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 398,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "the",
+                    "polygon": [
+                        2720,
+                        782,
+                        2853,
+                        784,
+                        2853,
+                        861,
+                        2720,
+                        861
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 402,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "riches",
+                    "polygon": [
+                        279,
+                        898,
+                        523,
+                        894,
+                        522,
+                        977,
+                        277,
+                        975
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 406,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "of",
+                    "polygon": [
+                        553,
+                        893,
+                        635,
+                        892,
+                        634,
+                        977,
+                        552,
+                        977
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 413,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "God",
+                    "polygon": [
+                        651,
+                        892,
+                        810,
+                        890,
+                        809,
+                        977,
+                        650,
+                        977
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 416,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "into",
+                    "polygon": [
+                        838,
+                        889,
+                        995,
+                        888,
+                        994,
+                        977,
+                        837,
+                        977
+                    ],
+                    "confidence": 0.993,
+                    "span": {
+                        "offset": 420,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "us",
+                    "polygon": [
+                        1023,
+                        888,
+                        1115,
+                        887,
+                        1114,
+                        977,
+                        1022,
+                        977
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 425,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "for",
+                    "polygon": [
+                        1144,
+                        887,
+                        1257,
+                        886,
+                        1257,
+                        977,
+                        1144,
+                        977
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 428,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "our",
+                    "polygon": [
+                        1284,
+                        886,
+                        1421,
+                        885,
+                        1421,
+                        977,
+                        1284,
+                        977
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 432,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "participation-13:14:",
+                    "polygon": [
+                        1448,
+                        885,
+                        2299,
+                        887,
+                        2299,
+                        967,
+                        1448,
+                        977
+                    ],
+                    "confidence": 0.984,
+                    "span": {
+                        "offset": 436,
+                        "length": 20
+                    }
+                },
+                {
+                    "content": "1.",
+                    "polygon": [
+                        288,
+                        1007,
+                        376,
+                        1005,
+                        374,
+                        1087,
+                        286,
+                        1087
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 457,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "God",
+                    "polygon": [
+                        419,
+                        1004,
+                        576,
+                        1002,
+                        574,
+                        1087,
+                        417,
+                        1087
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 460,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "is",
+                    "polygon": [
+                        596,
+                        1001,
+                        661,
+                        1000,
+                        659,
+                        1087,
+                        594,
+                        1087
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 464,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "love,",
+                    "polygon": [
+                        682,
+                        1000,
+                        864,
+                        998,
+                        862,
+                        1087,
+                        681,
+                        1087
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 467,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "and",
+                    "polygon": [
+                        881,
+                        998,
+                        1036,
+                        996,
+                        1035,
+                        1086,
+                        879,
+                        1087
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 473,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "this",
+                    "polygon": [
+                        1058,
+                        996,
+                        1209,
+                        995,
+                        1208,
+                        1086,
+                        1056,
+                        1086
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 477,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "love",
+                    "polygon": [
+                        1232,
+                        995,
+                        1392,
+                        994,
+                        1390,
+                        1086,
+                        1231,
+                        1086
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 482,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "is",
+                    "polygon": [
+                        1415,
+                        994,
+                        1480,
+                        993,
+                        1478,
+                        1086,
+                        1414,
+                        1086
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 487,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "being",
+                    "polygon": [
+                        1503,
+                        993,
+                        1725,
+                        993,
+                        1723,
+                        1086,
+                        1501,
+                        1086
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 490,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "transmitted",
+                    "polygon": [
+                        1745,
+                        993,
+                        2226,
+                        996,
+                        2224,
+                        1086,
+                        1743,
+                        1086
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 496,
+                        "length": 11
+                    }
+                },
+                {
+                    "content": "as",
+                    "polygon": [
+                        2249,
+                        996,
+                        2332,
+                        997,
+                        2331,
+                        1086,
+                        2247,
+                        1086
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 508,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "grace",
+                    "polygon": [
+                        2357,
+                        998,
+                        2568,
+                        1000,
+                        2567,
+                        1086,
+                        2355,
+                        1086
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 511,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "into",
+                    "polygon": [
+                        2589,
+                        1001,
+                        2744,
+                        1003,
+                        2742,
+                        1087,
+                        2587,
+                        1086
+                    ],
+                    "confidence": 0.991,
+                    "span": {
+                        "offset": 517,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "us",
+                    "polygon": [
+                        2764,
+                        1003,
+                        2859,
+                        1005,
+                        2859,
+                        1087,
+                        2763,
+                        1087
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 522,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "by",
+                    "polygon": [
+                        406,
+                        1115,
+                        510,
+                        1113,
+                        507,
+                        1202,
+                        403,
+                        1202
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 525,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "the",
+                    "polygon": [
+                        536,
+                        1113,
+                        664,
+                        1110,
+                        661,
+                        1200,
+                        533,
+                        1202
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 528,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Spirit,",
+                    "polygon": [
+                        694,
+                        1110,
+                        953,
+                        1107,
+                        952,
+                        1197,
+                        692,
+                        1200
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 532,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "who",
+                    "polygon": [
+                        971,
+                        1107,
+                        1143,
+                        1105,
+                        1142,
+                        1195,
+                        969,
+                        1197
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 540,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "is",
+                    "polygon": [
+                        1172,
+                        1105,
+                        1237,
+                        1105,
+                        1236,
+                        1194,
+                        1171,
+                        1195
+                    ],
+                    "confidence": 0.993,
+                    "span": {
+                        "offset": 544,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "the",
+                    "polygon": [
+                        1267,
+                        1105,
+                        1397,
+                        1104,
+                        1397,
+                        1193,
+                        1267,
+                        1194
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 547,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Transmitter.",
+                    "polygon": [
+                        1427,
+                        1104,
+                        1946,
+                        1105,
+                        1946,
+                        1187,
+                        1427,
+                        1192
+                    ],
+                    "confidence": 0.993,
+                    "span": {
+                        "offset": 551,
+                        "length": 12
+                    }
+                },
+                {
+                    "content": "2.",
+                    "polygon": [
+                        279,
+                        1221,
+                        380,
+                        1221,
+                        377,
+                        1307,
+                        276,
+                        1307
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 564,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "The",
+                    "polygon": [
+                        409,
+                        1221,
+                        564,
+                        1220,
+                        561,
+                        1307,
+                        406,
+                        1307
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 567,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Spirit",
+                    "polygon": [
+                        592,
+                        1219,
+                        825,
+                        1218,
+                        823,
+                        1307,
+                        589,
+                        1307
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 571,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "is",
+                    "polygon": [
+                        850,
+                        1218,
+                        917,
+                        1218,
+                        915,
+                        1307,
+                        847,
+                        1307
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 578,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "the",
+                    "polygon": [
+                        944,
+                        1218,
+                        1076,
+                        1217,
+                        1073,
+                        1307,
+                        941,
+                        1307
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 581,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "fellowship,",
+                    "polygon": [
+                        1102,
+                        1217,
+                        1541,
+                        1216,
+                        1540,
+                        1307,
+                        1100,
+                        1307
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 585,
+                        "length": 11
+                    }
+                },
+                {
+                    "content": "the",
+                    "polygon": [
+                        1571,
+                        1216,
+                        1701,
+                        1216,
+                        1700,
+                        1307,
+                        1569,
+                        1307
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 597,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "communication,",
+                    "polygon": [
+                        1730,
+                        1215,
+                        2379,
+                        1216,
+                        2379,
+                        1305,
+                        1729,
+                        1307
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 601,
+                        "length": 14
+                    }
+                },
+                {
+                    "content": "the",
+                    "polygon": [
+                        2406,
+                        1216,
+                        2539,
+                        1216,
+                        2539,
+                        1304,
+                        2405,
+                        1305
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 616,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "circula-",
+                    "polygon": [
+                        2564,
+                        1216,
+                        2861,
+                        1218,
+                        2861,
+                        1303,
+                        2564,
+                        1304
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 620,
+                        "length": 8
+                    }
+                },
+                {
+                    "content": "tion,",
+                    "polygon": [
+                        402,
+                        1332,
+                        586,
+                        1331,
+                        586,
+                        1419,
+                        402,
+                        1418
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 629,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "the",
+                    "polygon": [
+                        615,
+                        1330,
+                        747,
+                        1330,
+                        747,
+                        1419,
+                        615,
+                        1419
+                    ],
+                    "confidence": 0.997,
+                    "span": {
+                        "offset": 635,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "transmission",
+                    "polygon": [
+                        775,
+                        1330,
+                        1309,
+                        1328,
+                        1309,
+                        1419,
+                        775,
+                        1419
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 639,
+                        "length": 12
+                    }
+                },
+                {
+                    "content": "of",
+                    "polygon": [
+                        1338,
+                        1327,
+                        1412,
+                        1327,
+                        1412,
+                        1419,
+                        1338,
+                        1419
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 652,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "the",
+                    "polygon": [
+                        1430,
+                        1327,
+                        1568,
+                        1327,
+                        1568,
+                        1419,
+                        1430,
+                        1419
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 655,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "grace",
+                    "polygon": [
+                        1598,
+                        1327,
+                        1814,
+                        1326,
+                        1814,
+                        1418,
+                        1598,
+                        1418
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 659,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "of",
+                    "polygon": [
+                        1846,
+                        1326,
+                        1929,
+                        1326,
+                        1929,
+                        1417,
+                        1846,
+                        1417
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 665,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "Christ",
+                    "polygon": [
+                        1948,
+                        1326,
+                        2209,
+                        1326,
+                        2209,
+                        1415,
+                        1948,
+                        1417
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 668,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "with",
+                    "polygon": [
+                        2234,
+                        1326,
+                        2421,
+                        1326,
+                        2421,
+                        1413,
+                        2234,
+                        1415
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 675,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "the",
+                    "polygon": [
+                        2449,
+                        1326,
+                        2580,
+                        1326,
+                        2580,
+                        1411,
+                        2449,
+                        1413
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 680,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "love",
+                    "polygon": [
+                        2606,
+                        1326,
+                        2770,
+                        1326,
+                        2770,
+                        1409,
+                        2606,
+                        1411
+                    ],
+                    "confidence": 0.986,
+                    "span": {
+                        "offset": 684,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "of",
+                    "polygon": [
+                        2796,
+                        1326,
+                        2876,
+                        1326,
+                        2876,
+                        1408,
+                        2796,
+                        1409
+                    ],
+                    "confidence": 0.996,
+                    "span": {
+                        "offset": 689,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "the",
+                    "polygon": [
+                        398,
+                        1441,
+                        535,
+                        1441,
+                        533,
+                        1533,
+                        397,
+                        1533
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 692,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "Father,",
+                    "polygon": [
+                        565,
+                        1441,
+                        851,
+                        1440,
+                        850,
+                        1533,
+                        564,
+                        1533
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 696,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "transmitting",
+                    "polygon": [
+                        883,
+                        1440,
+                        1408,
+                        1439,
+                        1408,
+                        1532,
+                        882,
+                        1533
+                    ],
+                    "confidence": 0.995,
+                    "span": {
+                        "offset": 704,
+                        "length": 12
+                    }
+                },
+                {
+                    "content": "the",
+                    "polygon": [
+                        1436,
+                        1439,
+                        1566,
+                        1439,
+                        1566,
+                        1531,
+                        1435,
+                        1532
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 717,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "divine",
+                    "polygon": [
+                        1598,
+                        1439,
+                        1847,
+                        1438,
+                        1848,
+                        1531,
+                        1598,
+                        1531
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 721,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "riches",
+                    "polygon": [
+                        1876,
+                        1438,
+                        2125,
+                        1438,
+                        2125,
+                        1531,
+                        1877,
+                        1531
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 728,
+                        "length": 6
+                    }
+                },
+                {
+                    "content": "into",
+                    "polygon": [
+                        2155,
+                        1438,
+                        2315,
+                        1438,
+                        2316,
+                        1530,
+                        2155,
+                        1530
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 735,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "our",
+                    "polygon": [
+                        2346,
+                        1438,
+                        2483,
+                        1438,
+                        2484,
+                        1530,
+                        2347,
+                        1530
+                    ],
+                    "confidence": 0.999,
+                    "span": {
+                        "offset": 740,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "being",
+                    "polygon": [
+                        2509,
+                        1438,
+                        2733,
+                        1438,
+                        2735,
+                        1530,
+                        2510,
+                        1530
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 744,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "for",
+                    "polygon": [
+                        2759,
+                        1439,
+                        2870,
+                        1439,
+                        2870,
+                        1530,
+                        2760,
+                        1530
+                    ],
+                    "confidence": 0.998,
+                    "span": {
+                        "offset": 750,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "our",
+                    "polygon": [
+                        397,
+                        1557,
+                        541,
+                        1558,
+                        540,
+                        1648,
+                        395,
+                        1648
+                    ],
+                    "confidence": 0.994,
+                    "span": {
+                        "offset": 754,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "enjoyment.",
+                    "polygon": [
+                        567,
+                        1558,
+                        1021,
+                        1553,
+                        1021,
+                        1647,
+                        565,
+                        1648
+                    ],
+                    "confidence": 0.992,
+                    "span": {
+                        "offset": 758,
+                        "length": 10
+                    }
+                },
+                {
+                    "content": "OS:&",
+                    "polygon": [
+                        2027,
+                        2112,
+                        2202,
+                        2112,
+                        2201,
+                        2193,
+                        2025,
+                        2189
+                    ],
+                    "confidence": 0.646,
+                    "span": {
+                        "offset": 769,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "Basil",
+                    "polygon": [
+                        2229,
+                        2111,
+                        2428,
+                        2106,
+                        2428,
+                        2193,
+                        2228,
+                        2193
+                    ],
+                    "confidence": 0.282,
+                    "span": {
+                        "offset": 774,
+                        "length": 5
+                    }
+                },
+                {
+                    "content": "sud",
+                    "polygon": [
+                        2107,
+                        2219,
+                        2261,
+                        2219,
+                        2261,
+                        2311,
+                        2107,
+                        2308
+                    ],
+                    "confidence": 0.628,
+                    "span": {
+                        "offset": 780,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "I",
+                    "polygon": [
+                        2293,
+                        2219,
+                        2331,
+                        2219,
+                        2331,
+                        2311,
+                        2293,
+                        2311
+                    ],
+                    "confidence": 0.188,
+                    "span": {
+                        "offset": 784,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "noyn",
+                    "polygon": [
+                        2357,
+                        2219,
+                        2539,
+                        2221,
+                        2539,
+                        2311,
+                        2357,
+                        2311
+                    ],
+                    "confidence": 0.325,
+                    "span": {
+                        "offset": 786,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "For",
+                    "polygon": [
+                        2609,
+                        2225,
+                        2758,
+                        2224,
+                        2758,
+                        2307,
+                        2609,
+                        2308
+                    ],
+                    "confidence": 0.536,
+                    "span": {
+                        "offset": 791,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "8",
+                    "polygon": [
+                        2122,
+                        2557,
+                        2229,
+                        2557,
+                        2228,
+                        2637,
+                        2122,
+                        2636
+                    ],
+                    "confidence": 0.455,
+                    "span": {
+                        "offset": 795,
+                        "length": 1
+                    }
+                },
+                {
+                    "content": "BUS",
+                    "polygon": [
+                        969,
+                        3240,
+                        1119,
+                        3239,
+                        1117,
+                        3315,
+                        966,
+                        3315
+                    ],
+                    "confidence": 0.261,
+                    "span": {
+                        "offset": 797,
+                        "length": 3
+                    }
+                },
+                {
+                    "content": "y-eindo",
+                    "polygon": [
+                        1147,
+                        3239,
+                        1605,
+                        3237,
+                        1604,
+                        3315,
+                        1145,
+                        3315
+                    ],
+                    "confidence": 0.173,
+                    "span": {
+                        "offset": 801,
+                        "length": 7
+                    }
+                },
+                {
+                    "content": "jamy",
+                    "polygon": [
+                        1638,
+                        3237,
+                        1823,
+                        3237,
+                        1822,
+                        3316,
+                        1637,
+                        3315
+                    ],
+                    "confidence": 0.063,
+                    "span": {
+                        "offset": 809,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "bort",
+                    "polygon": [
+                        1861,
+                        3237,
+                        2035,
+                        3238,
+                        2035,
+                        3317,
+                        1860,
+                        3317
+                    ],
+                    "confidence": 0.673,
+                    "span": {
+                        "offset": 814,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "OUT)",
+                    "polygon": [
+                        2041,
+                        3245,
+                        2235,
+                        3246,
+                        2234,
+                        3314,
+                        2041,
+                        3314
+                    ],
+                    "confidence": 0.606,
+                    "span": {
+                        "offset": 819,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "18",
+                    "polygon": [
+                        2110,
+                        3137,
+                        2188,
+                        3136,
+                        2188,
+                        3205,
+                        2110,
+                        3206
+                    ],
+                    "confidence": 0.772,
+                    "span": {
+                        "offset": 824,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "20",
+                    "polygon": [
+                        2217,
+                        3136,
+                        2333,
+                        3136,
+                        2333,
+                        3203,
+                        2217,
+                        3205
+                    ],
+                    "confidence": 0.687,
+                    "span": {
+                        "offset": 827,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "10",
+                    "polygon": [
+                        2368,
+                        3135,
+                        2444,
+                        3135,
+                        2443,
+                        3202,
+                        2367,
+                        3203
+                    ],
+                    "confidence": 0.926,
+                    "span": {
+                        "offset": 830,
+                        "length": 2
+                    }
+                },
+                {
+                    "content": "900",
+                    "polygon": [
+                        2465,
+                        3135,
+                        2625,
+                        3133,
+                        2625,
+                        3201,
+                        2464,
+                        3202
+                    ],
+                    "confidence": 0.649,
+                    "span": {
+                        "offset": 833,
+                        "length": 3
+                    }
+                }
+            ],
+            "lines": [
+                {
+                    "content": "1. When we turn our heart to the Lord to behold and reflect the",
+                    "polygon": [
+                        312,
+                        147,
+                        2822,
+                        142,
+                        2823,
+                        234,
+                        312,
+                        244
+                    ],
+                    "spans": [
+                        {
+                            "offset": 0,
+                            "length": 63
+                        }
+                    ]
+                },
+                {
+                    "content": "glory of the Lord with an unveiled face, He infuses us with",
+                    "polygon": [
+                        426,
+                        251,
+                        2827,
+                        245,
+                        2828,
+                        340,
+                        426,
+                        351
+                    ],
+                    "spans": [
+                        {
+                            "offset": 64,
+                            "length": 59
+                        }
+                    ]
+                },
+                {
+                    "content": "the elements of what He is and what He has done.",
+                    "polygon": [
+                        428,
+                        357,
+                        2455,
+                        349,
+                        2456,
+                        434,
+                        428,
+                        447
+                    ],
+                    "spans": [
+                        {
+                            "offset": 124,
+                            "length": 48
+                        }
+                    ]
+                },
+                {
+                    "content": "2. Thus, we are being transformed metabolically from one degree",
+                    "polygon": [
+                        300,
+                        460,
+                        2844,
+                        455,
+                        2844,
+                        552,
+                        300,
+                        558
+                    ],
+                    "spans": [
+                        {
+                            "offset": 173,
+                            "length": 63
+                        }
+                    ]
+                },
+                {
+                    "content": "of glory to another degree of glory to have His life shape by",
+                    "polygon": [
+                        428,
+                        570,
+                        2843,
+                        566,
+                        2843,
+                        656,
+                        428,
+                        663
+                    ],
+                    "spans": [
+                        {
+                            "offset": 237,
+                            "length": 61
+                        }
+                    ]
+                },
+                {
+                    "content": "His life power with His life essence.",
+                    "polygon": [
+                        421,
+                        680,
+                        1874,
+                        667,
+                        1875,
+                        748,
+                        421,
+                        768
+                    ],
+                    "spans": [
+                        {
+                            "offset": 299,
+                            "length": 37
+                        }
+                    ]
+                },
+                {
+                    "content": "I. The transmitting Spirit transmits all that Christ is with all the",
+                    "polygon": [
+                        164,
+                        782,
+                        2852,
+                        775,
+                        2853,
+                        861,
+                        164,
+                        874
+                    ],
+                    "spans": [
+                        {
+                            "offset": 337,
+                            "length": 68
+                        }
+                    ]
+                },
+                {
+                    "content": "riches of God into us for our participation-13:14:",
+                    "polygon": [
+                        277,
+                        890,
+                        2298,
+                        884,
+                        2298,
+                        971,
+                        277,
+                        977
+                    ],
+                    "spans": [
+                        {
+                            "offset": 406,
+                            "length": 50
+                        }
+                    ]
+                },
+                {
+                    "content": "1. God is love, and this love is being transmitted as grace into us",
+                    "polygon": [
+                        286,
+                        994,
+                        2858,
+                        993,
+                        2858,
+                        1085,
+                        286,
+                        1087
+                    ],
+                    "spans": [
+                        {
+                            "offset": 457,
+                            "length": 67
+                        }
+                    ]
+                },
+                {
+                    "content": "by the Spirit, who is the Transmitter.",
+                    "polygon": [
+                        402,
+                        1111,
+                        1944,
+                        1103,
+                        1945,
+                        1188,
+                        402,
+                        1201
+                    ],
+                    "spans": [
+                        {
+                            "offset": 525,
+                            "length": 38
+                        }
+                    ]
+                },
+                {
+                    "content": "2. The Spirit is the fellowship, the communication, the circula-",
+                    "polygon": [
+                        275,
+                        1218,
+                        2860,
+                        1215,
+                        2860,
+                        1303,
+                        275,
+                        1307
+                    ],
+                    "spans": [
+                        {
+                            "offset": 564,
+                            "length": 64
+                        }
+                    ]
+                },
+                {
+                    "content": "tion, the transmission of the grace of Christ with the love of",
+                    "polygon": [
+                        401,
+                        1330,
+                        2875,
+                        1325,
+                        2876,
+                        1413,
+                        401,
+                        1419
+                    ],
+                    "spans": [
+                        {
+                            "offset": 629,
+                            "length": 62
+                        }
+                    ]
+                },
+                {
+                    "content": "the Father, transmitting the divine riches into our being for",
+                    "polygon": [
+                        396,
+                        1440,
+                        2869,
+                        1438,
+                        2869,
+                        1529,
+                        396,
+                        1532
+                    ],
+                    "spans": [
+                        {
+                            "offset": 692,
+                            "length": 61
+                        }
+                    ]
+                },
+                {
+                    "content": "our enjoyment.",
+                    "polygon": [
+                        395,
+                        1556,
+                        1020,
+                        1553,
+                        1020,
+                        1645,
+                        395,
+                        1648
+                    ],
+                    "spans": [
+                        {
+                            "offset": 754,
+                            "length": 14
+                        }
+                    ]
+                },
+                {
+                    "content": "OS:& Basil",
+                    "polygon": [
+                        1982,
+                        2106,
+                        2427,
+                        2106,
+                        2427,
+                        2192,
+                        1982,
+                        2193
+                    ],
+                    "spans": [
+                        {
+                            "offset": 769,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "sud I noyn",
+                    "polygon": [
+                        2106,
+                        2218,
+                        2538,
+                        2220,
+                        2538,
+                        2311,
+                        2106,
+                        2308
+                    ],
+                    "spans": [
+                        {
+                            "offset": 780,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
+                    "content": "For",
+                    "polygon": [
+                        2610,
+                        2225,
+                        2757,
+                        2224,
+                        2757,
+                        2307,
+                        2609,
+                        2308
+                    ],
+                    "spans": [
+                        {
+                            "offset": 791,
+                            "length": 3
+                        }
+                    ]
+                },
+                {
+                    "content": "8",
+                    "polygon": [
+                        2123,
+                        2557,
+                        2228,
+                        2559,
+                        2228,
+                        2636,
+                        2122,
+                        2637
+                    ],
+                    "spans": [
+                        {
+                            "offset": 795,
+                            "length": 1
+                        }
+                    ]
+                },
+                {
+                    "content": "BUS y-eindo jamy bort",
+                    "polygon": [
+                        966,
+                        3237,
+                        2034,
+                        3237,
+                        2034,
+                        3316,
+                        966,
+                        3316
+                    ],
+                    "spans": [
+                        {
+                            "offset": 797,
+                            "length": 21
+                        }
+                    ]
+                },
+                {
+                    "content": "OUT)",
+                    "polygon": [
+                        2041,
+                        3244,
+                        2257,
+                        3244,
+                        2257,
+                        3313,
+                        2041,
+                        3313
+                    ],
+                    "spans": [
+                        {
+                            "offset": 819,
+                            "length": 4
+                        }
+                    ]
+                },
+                {
+                    "content": "18 20 10 900",
+                    "polygon": [
+                        2110,
+                        3136,
+                        2624,
+                        3132,
+                        2625,
+                        3200,
+                        2110,
+                        3205
+                    ],
+                    "spans": [
+                        {
+                            "offset": 824,
+                            "length": 12
+                        }
+                    ]
+                }
+            ],
+            "spans": [
+                {
+                    "offset": 0,
+                    "length": 836
+                }
+            ]
+        }
+    ],
+    "paragraphs": [
+        {
+            "spans": [
+                {
+                    "offset": 0,
+                    "length": 172
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        312,
+                        147,
+                        2828,
+                        142,
+                        2828,
+                        442,
+                        312,
+                        447
+                    ]
+                }
+            ],
+            "content": "1. When we turn our heart to the Lord to behold and reflect the glory of the Lord with an unveiled face, He infuses us with the elements of what He is and what He has done."
+        },
+        {
+            "spans": [
+                {
+                    "offset": 173,
+                    "length": 163
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        300,
+                        460,
+                        2844,
+                        455,
+                        2845,
+                        763,
+                        300,
+                        768
+                    ]
+                }
+            ],
+            "content": "2. Thus, we are being transformed metabolically from one degree of glory to another degree of glory to have His life shape by His life power with His life essence."
+        },
+        {
+            "spans": [
+                {
+                    "offset": 337,
+                    "length": 119
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        164,
+                        782,
+                        2853,
+                        775,
+                        2853,
+                        970,
+                        164,
+                        977
+                    ]
+                }
+            ],
+            "content": "I. The transmitting Spirit transmits all that Christ is with all the riches of God into us for our participation-13:14:"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 457,
+                    "length": 106
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        286,
+                        994,
+                        2858,
+                        993,
+                        2858,
+                        1200,
+                        286,
+                        1201
+                    ]
+                }
+            ],
+            "content": "1. God is love, and this love is being transmitted as grace into us by the Spirit, who is the Transmitter."
+        },
+        {
+            "spans": [
+                {
+                    "offset": 564,
+                    "length": 204
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        275,
+                        1218,
+                        2876,
+                        1215,
+                        2876,
+                        1645,
+                        275,
+                        1648
+                    ]
+                }
+            ],
+            "content": "2. The Spirit is the fellowship, the communication, the circula- tion, the transmission of the grace of Christ with the love of the Father, transmitting the divine riches into our being for our enjoyment."
+        },
+        {
+            "spans": [
+                {
+                    "offset": 769,
+                    "length": 25
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        1982,
+                        2103,
+                        2758,
+                        2108,
+                        2757,
+                        2313,
+                        1981,
+                        2307
+                    ]
+                }
+            ],
+            "content": "OS:& Basil sud I noyn For"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 795,
+                    "length": 1
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        2123,
+                        2557,
+                        2229,
+                        2558,
+                        2228,
+                        2638,
+                        2122,
+                        2637
+                    ]
+                }
+            ],
+            "content": "8"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 797,
+                    "length": 26
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        966,
+                        3237,
+                        2257,
+                        3237,
+                        2257,
+                        3316,
+                        966,
+                        3316
+                    ]
+                }
+            ],
+            "content": "BUS y-eindo jamy bort OUT)"
+        },
+        {
+            "spans": [
+                {
+                    "offset": 824,
+                    "length": 12
+                }
+            ],
+            "boundingRegions": [
+                {
+                    "pageNumber": 1,
+                    "polygon": [
+                        2109,
+                        3136,
+                        2624,
+                        3131,
+                        2625,
+                        3200,
+                        2110,
+                        3205
+                    ]
+                }
+            ],
+            "content": "18 20 10 900"
+        }
+    ],
+    "styles": [],
+    "languages": [
+        {
+            "spans": [
+                {
+                    "offset": 0,
+                    "length": 768
+                }
+            ],
+            "locale": "en",
+            "confidence": 1
+        },
+        {
+            "spans": [
+                {
+                    "offset": 769,
+                    "length": 10
+                }
+            ],
+            "locale": "pt",
+            "confidence": 0.8
+        },
+        {
+            "spans": [
+                {
+                    "offset": 780,
+                    "length": 10
+                }
+            ],
+            "locale": "fr",
+            "confidence": 0.6
+        },
+        {
+            "spans": [
+                {
+                    "offset": 791,
+                    "length": 3
+                }
+            ],
+            "locale": "en",
+            "confidence": 0.99
+        },
+        {
+            "spans": [
+                {
+                    "offset": 797,
+                    "length": 21
+                }
+            ],
+            "locale": "cy",
+            "confidence": 0.9
+        },
+        {
+            "spans": [
+                {
+                    "offset": 819,
+                    "length": 4
+                }
+            ],
+            "locale": "en",
+            "confidence": 0.95
+        }
+    ],
+    "contentFormat": "text"
+}
