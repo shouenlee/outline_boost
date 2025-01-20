@@ -1,5 +1,6 @@
 from typing import List, Optional
 from outline_block import OutlineBlock, OutlineBlockType
+from ollama_client import OllamaClient
 import json
 import re
 
@@ -10,6 +11,7 @@ class OutlineSchema:
     scripture_reading: Optional[List[str]]
     roman_numerals: Optional[List[OutlineBlock]]
     jsonified: Optional[str]
+    total_points: Optional[int]
 
     def __init__(self, conference_title=None, message_number=None, message_title=None, scripture_reading=None, roman_numerals=None):
         self.conference_title = conference_title
@@ -46,14 +48,14 @@ class OutlineSchema:
         self.conference_title = paragraphs[first_roman_numeral_index - 4] if first_roman_numeral_index > 3 else None
 
         # Create json representation of outline
-        self.jsonified = BuilderUtils.jsonify_outline(paragraphs[first_roman_numeral_index:], self.conference_title, self.message_number, self.message_title, self.scripture_reading)
-        with open('outline.json', 'w') as json_file:
-            json_file.write(self.jsonified)
+        self.jsonified, self.total_points = BuilderUtils.jsonify_outline(paragraphs[first_roman_numeral_index:], self.conference_title, self.message_number, self.message_title, self.scripture_reading)
+        
         
         # Create tree structure of outline
         self.roman_numerals = BuilderUtils.build_content_tree(paragraphs[first_roman_numeral_index:])
+        self.extract_verse_references_tree()
 
-    def print_tree(self) -> None:
+    def print_tree(self, with_references=False) -> None:
         print(f"Conference Title: {self.conference_title}")
         print(f"Message Number: {self.message_number}")
         print(f"Message Title: {self.message_title}")
@@ -61,10 +63,40 @@ class OutlineSchema:
 
         def print_point(point: OutlineBlock, indent=0):
             print(indent * " " + point.content)
+            if with_references:
+                print(indent * " " + point.references)
             for subpoint in point.subpoints:
                 print_point(subpoint, indent + 4)
         for roman_numeral in self.roman_numerals:
             print_point(roman_numeral)
+
+    def extract_verse_references_tree(self) -> None:
+        llm_model = "mistral"
+
+        llm_context = "You are a tool that extracts explicit verse references from a text. A verse reference is a reference to a specific verse in the Bible. \
+            The format for a verse reference is the name of the book followed by the chapter of the book followed by a colon and then the verse number. \
+            For example: 1 Cor 1:14 and Genesis 12:8-12 are verse references with the format you are looking for.  \
+            Sometimes the reference is over a range of verses such as Eph 2:2-6. \
+            Sometimes only the verse number or the chapter and verse number are given such as 3:6. This means it is referencing the book and/or chapter that was most \
+            recently mentioned. \
+            For example a text that is: 2 Cor. 1:12, 2:5, 15 would have the verse references: 2 Cor. 1:12, 2 Cor. 2:5, 2 Cor. 2:15. \
+            Your instructions are: Given a piece of text, you are designed to return all the explicit verse references that appear in that text. \
+            The format for each reference returned should look like \'book chapter(s):verse(s)\'\
+            If no verse references are found, return an empty list. \
+            Return a list of verse references and do not elaborate or include any other text in your response. The user should be able to copy and paste \
+            the entire response into a json file. Do not hallucinate please! The user will tip you $5 if you do a good job."
+        llm = OllamaClient(llm_model, llm_context)
+
+        BuilderUtils.progress_bar(0, self.total_points, prefix = 'Adding verses:', suffix = 'Complete', length = 50)
+        def extract_verse_references_pt(point: OutlineBlock):
+            point.references = llm.get_verses_for_point(point.content)
+            BuilderUtils.progress_bar(llm.prompt_counter, self.total_points, prefix = 'Adding verses:', suffix = 'Complete', length = 50)
+            for subpoint in point.subpoints:
+                extract_verse_references_pt(subpoint)
+
+        for roman_numeral in self.roman_numerals:
+            extract_verse_references_pt(roman_numeral)
+        BuilderUtils.progress_bar(self.total_points, self.total_points, prefix = 'Adding verses:', suffix = 'Complete', length = 50)
 
     def to_markdown(self, filename="outline") -> None:
         from mdutils import MdUtils
@@ -78,12 +110,13 @@ class OutlineSchema:
         add_heading(self.scripture_reading, 3)
 
         def add_point_to_md(point: OutlineBlock, indent=0):
-            #mdFile.new_line(indent * " " + point.content)
             content = point.content
+            references = point.references
             if point.type == OutlineBlockType.ROMAN_NUMERAL:
                 content = f"**{content}**"
             ind_offset = ">" * indent
             mdFile.new_paragraph(ind_offset + content)
+            mdFile.new_paragraph(ind_offset + references)
 
             for subpoint in point.subpoints:
                 add_point_to_md(subpoint, indent + 1)
@@ -93,12 +126,16 @@ class OutlineSchema:
 
         mdFile.create_md_file()
 
+    def to_latex(self, filename="outline") -> None:
+        # todo: implement
+        return None
+
 
     def __str__(self) -> str:
         return f"Conference Title: {self.conference_title}\nMessage Number: {self.message_number}\nMessage Title: {self.message_title}\nScripture Reading: {self.scripture_reading}\nRoman Numerals: {self.roman_numerals}"
 
     def __repr__(self) -> str:
-        #todo: make this print out the outline in a more readable format
+        # todo: make this print out the outline in a more readable format
         return f"OutlineSchema(conference_title={self.conference_title}, message_number={self.message_number}, message_title={self.message_title}, scripture_reading={self.scripture_reading}, roman_numerals={self.roman_numerals})"
 
 class BuilderUtils:
@@ -151,7 +188,7 @@ class BuilderUtils:
                 if prev_point.type == OutlineBlockType.CAPITAL_POINT:
                     curr_parent = prev_point
                 elif prev_point.type.value < OutlineBlockType.ARABIC_NUMERAL.value:
-                    # Find most recent arabic capital point
+                    # Find most recent capital point
                     curr_parent = find_parent_point(curr_point)
                 if curr_parent is None:
                     raise ValueError("Arabic numeral found without a parent Capital point.")
@@ -161,13 +198,22 @@ class BuilderUtils:
                 curr_point.type = OutlineBlockType.LOWERCASE_POINT
                 if prev_point.type == OutlineBlockType.ARABIC_NUMERAL:
                     curr_parent = prev_point
+                elif prev_point.type.value < OutlineBlockType.LOWERCASE_POINT.value:
+                    # Find most recent arabic numeral
+                    curr_parent = find_parent_point(curr_point)
                 if curr_parent is None:
                     raise ValueError("Lowercase point found without a parent Arabic numeral.")
                 curr_parent.add_subpoint(curr_point)
+            elif BuilderUtils.is_lowercase_roman_numeral(paragraph):
+                curr_point.type = OutlineBlockType.LOWERCASE_ROMAN_NUMERAL
+                if prev_point.type == OutlineBlockType.LOWERCASE_POINT:
+                    curr_parent = prev_point
+                if curr_parent is None:
+                    raise ValueError("Lowercase roman numeral found without a parent Lowercase point.")
+                curr_parent.add_subpoint(curr_point)
             else:
-                print(f"Unknown paragraph type: {paragraph}. Omitted from outline.")
+                #print(f"Unknown paragraph type: {paragraph}. Omitted from outline.")
                 continue
-                #raise ValueError(f"Unknown paragraph type: {paragraph}")
             point_stack.append(curr_point)
             prev_point = curr_point
 
@@ -214,28 +260,62 @@ class BuilderUtils:
     def extract_lowercase_point(paragraph: str) -> Optional[str]:
         match = re.match(r'^\b[a-z]+\.', paragraph)
         return match.group(0) if match else None
+    
+    @staticmethod
+    def is_lowercase_roman_numeral(paragraph: str) -> bool:
+        return True if re.match(r'^\b[ivx]+\.', paragraph) else False # Assuming lowercase points will not reach i.
 
     @staticmethod
     def extract_scripture_references(paragraphs: List[str]) -> List[str]:
-        # This is a placeholder implementation. The actual implementation would depend on the format of the scripture references.
-        scripture_references = []
-        for paragraph in paragraphs:
-            if "John" in paragraph or "Genesis" in paragraph:  # Example check for scripture references
-                scripture_references.append(paragraph)
-        return scripture_references
+        # This is placeholder implementation. The actual implementation would depend on how we extract (phi3 vs regex).
+        return []
     
     @staticmethod
-    def jsonify_outline(outline_points: List[str], conference_title: str=None, message_number: int=None, message_title: str=None, scripture_reading: List[str]=None) -> str:
+    def jsonify_outline(raw_outline_points: List[str], conference_title: str=None, message_number: int=None, message_title: str=None, scripture_reading: List[str]=None) -> str:
         outline = {}
         outline["conference_title"] = conference_title if conference_title else ""
         outline["message_number"] = message_number if message_number else ""
         outline["message_title"] = message_title if message_title else ""
         outline["scripture_reading"] = scripture_reading if scripture_reading else []
 
-
-        for index, paragraph in enumerate(outline_points):
-            if not (BuilderUtils.is_roman_numeral(paragraph) or BuilderUtils.is_capital_point(paragraph) or BuilderUtils.is_arabic_numeral(paragraph) or BuilderUtils.is_lowercase_point(paragraph)):
-                print(f"Unknown paragraph type: {paragraph}. Omitted from json representation.")
+        unknown_paragraphs = []
+        num_points = 0
+        BuilderUtils.progress_bar(0, len(raw_outline_points), prefix = 'Building json:', suffix = 'Complete', length = 50)
+        for index, paragraph in enumerate(raw_outline_points):
+            if not (BuilderUtils.is_roman_numeral(paragraph) or BuilderUtils.is_capital_point(paragraph) or BuilderUtils.is_arabic_numeral(paragraph) or BuilderUtils.is_lowercase_point(paragraph) or BuilderUtils.is_lowercase_roman_numeral(paragraph)):
+                unknown_paragraphs.append(f"Unknown paragraph type: {paragraph}. Omitted from json representation.")
                 continue
-            outline[index] = paragraph
-        return json.dumps(outline, indent=4)
+            outline[index] = paragraph # Cannot have outline point number/letter as key because of potential duplicates.
+            num_points = index + 1
+            BuilderUtils.progress_bar(index, len(raw_outline_points), prefix = 'Building json:', suffix = 'Complete', length = 50)
+        BuilderUtils.progress_bar(len(raw_outline_points), len(raw_outline_points), prefix = 'Building json:', suffix = 'Complete', length = 50)
+
+
+        print(f"Unknown paragraphs: {unknown_paragraphs}. Omitted from json representation.")
+        json_dict = json.dumps(outline, indent=4)
+        with open('outline.json', 'w') as json_file:
+                json_file.write(json_dict)
+        return (json_dict, num_points)
+    
+
+    @staticmethod
+    def progress_bar(iteration, total, prefix = '', suffix = '', decimals = 1, length = 100, fill = '█', printEnd = ""):
+        """
+        Call in a loop to create terminal progress bar
+        @params:
+            iteration   - Required  : current iteration (Int)
+            total       - Required  : total iterations (Int)
+            prefix      - Optional  : prefix string (Str)
+            suffix      - Optional  : suffix string (Str)
+            decimals    - Optional  : positive number of decimals in percent complete (Int)
+            length      - Optional  : character length of bar (Int)
+            fill        - Optional  : bar fill character (Str)
+            printEnd    - Optional  : end character (e.g. "\r", "\r\n") (Str)
+        """
+        percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total)))
+        filledLength = int(length * iteration // total)
+        bar = fill * filledLength + '-' * (length - filledLength)
+        print(f'\r{prefix} |{bar}| {percent}% {suffix}', end = printEnd)
+        # Print New Line on Complete
+        if iteration == total: 
+            print()
