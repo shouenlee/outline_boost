@@ -1,26 +1,55 @@
 from ollama import chat
 
-llm_context = "You are a tool that extracts verse references from a text. A verse reference is a reference to a specific verse in the Bible. \
-    For example 1 Cor 1:14 is a verse reference and Genesis 12:8 is also a verse reference. You are designed to return the verse references in \
-    a piece of text to the user."
+class OllamaClient():
+    from typing import List, Optional
+    messages: Optional[str]
+    llm_model: str
+    llm_context: str
+    prompt_counter: int
 
-outline_point = "b. The current of the Divine Trinity within us as revealed in 2 Corinthians 13:14 is our spiritual pulse."
-user_prompt = f"Give me the verse references in \"{outline_point}\"."
+    def __init__(self, llm_model: str, llm_context: str):
+        self.llm_model = llm_model
+        self.llm_context = llm_context
+        self.messages = [
+          {
+            'role': 'system',
+            'content': llm_context,
+          },
+        ]
+        self.prompt_counter = 0
 
-messages = [
-  {
-    'role': 'system',
-    'content': llm_context,
-  },
-  {
-    'role': 'user',
-    'content': user_prompt,
-  },
-]
+    def prompt(self, prompt: str) -> str:
+        self.messages += [
+            {
+                'role': 'user',
+                'content': prompt,
+            }
+        ]
+        response = chat(
+            self.llm_model,
+            messages=self.messages
+        )
+        self.messages += [
+            {
+                'role': 'assistant',
+                'content': response.message.content,
+            }
+        ]
+        self.prompt_counter += 1
+        return response.message.content
+        
+    def get_verses_for_point(self, outline_point: str) -> str:
+        prompt = f"Give me a list of all the verse references in \"{outline_point}\"."
+        return self.prompt(prompt)
+    
+    def reset(self) -> None:
+        self.prompt_counter = 0
+        self.messages = []
 
-response = chat(
-        'llama3.2',
-        messages=messages
-    )
-
-print(response.message.content)
+    def run_all(self) -> List[str]:
+        self.reset()
+        responses = []
+        for pt in self.outline_points:
+            responses.append(self.get_verses(pt))
+        self.reset()
+        return responses
