@@ -12,6 +12,9 @@ phil_3_vision_mlx docs: https://josefalbers.github.io/Phi-3-Vision-MLX/module.ht
 
 azure ai document intelligence sdk: https://learn.microsoft.com/en-us/python/api/azure-ai-documentintelligence/azure.ai.documentintelligence.models?view=azure-python-preview
 
+ollama python examples: https://github.com/ollama/ollama-python/tree/main/examples
+
+
 ### Notes
 To build `verse requestor` run `build.py` using `.devcontainer` dockerfile. Binary executable artifacts are in `Release`.
 
@@ -26,7 +29,7 @@ To build `verse requestor` run `build.py` using `.devcontainer` dockerfile. Bina
 - [ ] Build class/tree structure for outline from json (allows for editing json before creating final markdown.)
 - [ ] Extract verse references for each outline point
     - [ ] Using regex
-    - [ ] Using SLM (Phi3? Llama 3.1?)
+    - [X] Using SLM (Phi3? Llama 3.1?)
 - [ ] Retrieve verses and populate each outline_block
 - [ ] Add verses to outline in-line
 
