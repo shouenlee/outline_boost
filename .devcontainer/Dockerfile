@@ -5,7 +5,6 @@ LABEL description="Docker Container for the Swift programming language"
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update && \
     apt-get -q install -y \
     binutils \
-    git \
     unzip \
     gnupg2 \
     libc6-dev \
@@ -24,19 +23,11 @@ RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && ap
     python3 \
     python3-pip \
     python3-venv \
-    ffmpeg \
-    libsm6 \
-    libxext6 \
     && rm -r /var/lib/apt/lists/*
-
-# Install tesseract for OCR
-RUN apt update
-RUN apt install tesseract-ocr -y
 
 # Create a virtual environment and install Python packages using pip
 RUN python3 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
-RUN pip install pytesseract opencv-python numpy matplotlib imutils
 
 # Everything up to here should cache nicely between Swift versions, assuming dev dependencies change little
 
