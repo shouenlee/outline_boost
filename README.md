@@ -30,8 +30,9 @@ To build `verse requestor` run `build.py` using `.devcontainer` dockerfile. Bina
 - [ ] Extract verse references for each outline point
     - [ ] Using regex
     - [X] Using SLM (Phi3? Llama 3.1?)
-- [ ] Retrieve verses and populate each outline_block
+- [ ] Retrieve verses and populate each outline_block (verse_requestor only runs in container with swift compiler, ollama doesn't run in the container. Unable to run build_outline e2e.)
 - [ ] Add verses to outline in-line
+- [ ] Build docker compose to use ollama in container
 
 Plan:
 1. retrieval all paragraphs in the outline
