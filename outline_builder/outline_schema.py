@@ -1,6 +1,7 @@
 from typing import List, Optional
 from outline_block import OutlineBlock, OutlineBlockType
 from ollama_client import OllamaClient
+import bible_utils
 import json
 import re
 
@@ -90,6 +91,7 @@ class OutlineSchema:
         BuilderUtils.progress_bar(0, self.total_points, prefix = 'Adding verses:', suffix = 'Complete', length = 50)
         def extract_verse_references_pt(point: OutlineBlock):
             point.references = llm.get_verses_for_point(point.content)
+            point.verses = BuilderUtils.get_verses_contents(point.references)
             BuilderUtils.progress_bar(llm.prompt_counter, self.total_points, prefix = 'Adding verses:', suffix = 'Complete', length = 50)
             for subpoint in point.subpoints:
                 extract_verse_references_pt(subpoint)
@@ -112,11 +114,13 @@ class OutlineSchema:
         def add_point_to_md(point: OutlineBlock, indent=0):
             content = point.content
             references = point.references
+            verses = point.verses
             if point.type == OutlineBlockType.ROMAN_NUMERAL:
                 content = f"**{content}**"
             ind_offset = ">" * indent
             mdFile.new_paragraph(ind_offset + content)
             mdFile.new_paragraph(ind_offset + references)
+            mdFile.new_paragraph(ind_offset + verses)
 
             for subpoint in point.subpoints:
                 add_point_to_md(subpoint, indent + 1)
@@ -319,3 +323,16 @@ class BuilderUtils:
         # Print New Line on Complete
         if iteration == total: 
             print()
+
+    @staticmethod
+    def get_verses_contents(verses: List[str]) -> List[str]:
+        verse_contents = []
+        for verse in verses:
+            verse_contents.append(BuilderUtils.get_verse_content(verse))
+
+    @staticmethod
+    def get_verse_content(verse: str) -> str:
+        import subprocess
+        command = ['./../Release/verse_requestor'] + verse.split()
+        result = subprocess.run(command, capture_output=True, text=True)
+        return result.stdout.strip()
