@@ -5,7 +5,7 @@ if __name__ == "__main__":
     from colorama import Fore, Style
 
     paragraphs = None
-    outline_dir = input("Enter the relative directory of the outline images: ")
+    outline_dir = "outlines" #input("Enter the relative directory of the outline images: ")
     try:
         load_dotenv(find_dotenv())
         print("Beginning document ocr")

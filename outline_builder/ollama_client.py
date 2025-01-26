@@ -1,5 +1,4 @@
-from ollama import chat
-
+import ollama, os
 class OllamaClient():
     from typing import List, Optional
     messages: Optional[str]
@@ -18,6 +17,9 @@ class OllamaClient():
         ]
         self.prompt_counter = 0
 
+        ollama_host = os.getenv('OLLAMA_HOST', "localhost:11434")
+        self.client = ollama.Client(host=ollama_host)
+
     def prompt(self, prompt: str) -> str:
         self.messages += [
             {
@@ -25,7 +27,7 @@ class OllamaClient():
                 'content': prompt,
             }
         ]
-        response = chat(
+        response = self.client.chat(
             self.llm_model,
             messages=self.messages
         )
