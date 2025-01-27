@@ -14,6 +14,7 @@ idna==3.10
 imutils==0.5.4
 isodate==0.7.2
 kiwisolver==1.4.8
+mdutils==1.6.0
 numpy==2.2.1
 ollama==0.4.7
 opencv-python==4.10.0.84
