@@ -1,31 +1,31 @@
-version: "3.8"
-
 services:
   verse_utils:
     build: ./verse_utils
     container_name: verse_utils
     networks:
       - outline_network
-
-  ollama_service:
-    build: ./ollama_service
-    container_name: ollama_service
     ports:
-      - "11434:11434"
-    networks:
-      - outline_network
+      - "5001:5001"
+
+  # ollama_service:
+  #   build: ./ollama_service
+  #   container_name: ollama_service
+  #   ports:
+  #     - "11434:11434"
+  #   networks:
+  #     - outline_network
 
   outline_builder:
     build: ./outline_builder
-    #command: tail -f /dev/null
+    # command: tail -f /dev/null
     volumes:
       - ./outline_builder:/app
     container_name: outline_builder
     depends_on:
       - verse_utils
-      - ollama_service
+    #  - ollama_service
     environment:
-      - OLLAMA_HOST=ollama_service:11434
+      - OLLAMA_HOST=http://host.docker.internal:11434 #ollama_service:11434
     networks:
       - outline_network
 
