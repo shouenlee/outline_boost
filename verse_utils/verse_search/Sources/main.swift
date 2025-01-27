@@ -6,7 +6,6 @@ print("Debug mode")
 basePath = FileManager.default.currentDirectoryPath
 #endif
 
-//print(basePath)
 var searchTerm = CommandLine.arguments.popLast()
 let fnSearch: Bool
 

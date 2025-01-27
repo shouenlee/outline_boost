@@ -5,7 +5,6 @@ var basePath = Bundle.main.bundlePath
 print("Debug mode")
 basePath = FileManager.default.currentDirectoryPath
 #endif
-print(basePath)
 
 let terminalArguments: Array<String> = Array(CommandLine.arguments.dropFirst()) // There is always one argument passed, which is the name of the program, we get rid of it here.
 if terminalArguments.isEmpty {

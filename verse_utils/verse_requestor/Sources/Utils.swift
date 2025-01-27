@@ -1,7 +1,7 @@
 import Foundation
 
 func formatNewLine(content: String) -> String {
-    return "🔻 " + content + "\n"
+    return content + "\n"
 }
 
 func isRangeOfVerses(arguments: Array<String>) -> Bool {
@@ -83,14 +83,14 @@ func getBookFromArguments(arguments: Array<String>) throws -> String {
         if arguments.count < 2 {
             throw VerseRequestorError.missingBookName
         }
-        book = arguments[0] + arguments[1]
+        book = (arguments[0] + " " + arguments[1]).lowercased()
     } else {
         if arguments.count < 1 {
             throw VerseRequestorError.missingBookName
         }
-        book = arguments[0]
+        book = arguments[0].lowercased()
     }
-
+    
     if let bookMap = books_map[book] {
         return bookMap
     } else {

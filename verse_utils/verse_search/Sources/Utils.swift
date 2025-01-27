@@ -30,13 +30,13 @@ func getBookFromArguments(arguments: Array<String>) throws -> (String, String) {
         if arguments.count < 3 {
             throw VerseRequestorError.missingBookName
         }
-        book = arguments[1] + arguments[2]
+        book = (arguments[1] + " " + arguments[2]).lowercased()
         numericBook = true
     } else {
         if arguments.count < 2 {
             throw VerseRequestorError.missingBookName
         }
-        book = arguments[1]
+        book = arguments[1].lowercased()
         numericBook = false
     }
 
