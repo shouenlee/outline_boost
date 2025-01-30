@@ -16,8 +16,13 @@ ollama python examples: https://github.com/ollama/ollama-python/tree/main/exampl
 
 
 ### Notes
-To build `verse requestor` run `build.py` using `.devcontainer` dockerfile. Binary executable artifacts are in `Release`.
+To run this project end-to-end:
+1. Clone this repo and install Docker
+2. Add your outline images in the `outlines` folder in numerical order.
+3. Run `docker compose up` in the outline_boost directory.
+4. json and md artifacts will be generated in `outline_builder`.
 
+If you do not have a dedicated GPU it is recommended to run ollama separately on your host machine. If you have a GPU, the provided configuration is recommended.
 
 ### TODOS:
 - [X] Find ocr library/service to use
@@ -33,6 +38,7 @@ To build `verse requestor` run `build.py` using `.devcontainer` dockerfile. Bina
 - [ ] Retrieve verses and populate each outline_block (verse_requestor only runs in container with swift compiler, ollama doesn't run in the container. Unable to run build_outline e2e.)
 - [ ] Add verses to outline in-line
 - [ ] Build docker compose to use ollama in container
+- [ ] Add configurability to running ollama in a container or on host machine
 
 Plan:
 1. retrieval all paragraphs in the outline
