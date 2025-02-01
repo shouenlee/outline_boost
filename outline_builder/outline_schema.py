@@ -1,9 +1,12 @@
 from typing import List, Optional
 from outline_block import OutlineBlock, OutlineBlockType
 from ollama_client import OllamaClient
+from verse_utils_client import VerseUtilsClient
+import ast
 import bible_utils
 import json
 import re
+import os
 
 class OutlineSchema:
     conference_title: Optional[str]
@@ -54,7 +57,7 @@ class OutlineSchema:
         
         # Create tree structure of outline
         self.roman_numerals = BuilderUtils.build_content_tree(paragraphs[first_roman_numeral_index:])
-        self.extract_verse_references_tree()
+        self.extract_references_and_verses_tree()
 
     def print_tree(self, with_references=False) -> None:
         print(f"Conference Title: {self.conference_title}")
@@ -71,7 +74,7 @@ class OutlineSchema:
         for roman_numeral in self.roman_numerals:
             print_point(roman_numeral)
 
-    def extract_verse_references_tree(self) -> None:
+    def extract_references_and_verses_tree(self) -> None:
         llm_model = "mistral"
 
         llm_context = "You are a tool that extracts explicit verse references from a text. A verse reference is a reference to a specific verse in the Bible. \
@@ -90,7 +93,8 @@ class OutlineSchema:
 
         BuilderUtils.progress_bar(0, self.total_points, prefix = 'Adding verses:', suffix = 'Complete', length = 50)
         def extract_verse_references_pt(point: OutlineBlock):
-            point.references = llm.get_verses_for_point(point.content)
+            llm_output = llm.get_verses_for_point(point.content)
+            point.references = ast.literal_eval(llm_output)
             point.verses = BuilderUtils.get_verses_contents(point.references)
             BuilderUtils.progress_bar(llm.prompt_counter, self.total_points, prefix = 'Adding verses:', suffix = 'Complete', length = 50)
             for subpoint in point.subpoints:
@@ -105,7 +109,7 @@ class OutlineSchema:
         def add_heading(heading: str, level: int):
             h = "#" * level
             mdFile.new_line(f"{h} {heading}")
-        mdFile = MdUtils(filename)
+        mdFile = MdUtils(f"{filename}")
         add_heading(self.conference_title, 3)
         add_heading(self.message_number, 3)
         add_heading(self.message_title, 1)
@@ -118,9 +122,10 @@ class OutlineSchema:
             if point.type == OutlineBlockType.ROMAN_NUMERAL:
                 content = f"**{content}**"
             ind_offset = ">" * indent
-            mdFile.new_paragraph(ind_offset + content)
-            mdFile.new_paragraph(ind_offset + references)
-            mdFile.new_paragraph(ind_offset + verses)
+            mdFile.new_paragraph(ind_offset + content) if content else None
+            mdFile.new_paragraph(ind_offset + ', '.join(references)) if references else None
+            verses_found = [v for v in verses if v]
+            mdFile.new_paragraph(ind_offset + ' '.join(verses_found)) if verses else None
 
             for subpoint in point.subpoints:
                 add_point_to_md(subpoint, indent + 1)
@@ -142,6 +147,9 @@ class OutlineSchema:
         # todo: make this print out the outline in a more readable format
         return f"OutlineSchema(conference_title={self.conference_title}, message_number={self.message_number}, message_title={self.message_title}, scripture_reading={self.scripture_reading}, roman_numerals={self.roman_numerals})"
 
+    def build_from_json(self, json_file_path: str) -> None:
+        # todo: given json representation of outline, build OutlineSchema object
+        return None
 class BuilderUtils:
     @staticmethod
     def extract_first_roman_numeral_index(paragraphs: List[str]) -> List[str]:
@@ -329,10 +337,9 @@ class BuilderUtils:
         verse_contents = []
         for verse in verses:
             verse_contents.append(BuilderUtils.get_verse_content(verse))
+        return verse_contents
 
     @staticmethod
     def get_verse_content(verse: str) -> str:
-        import subprocess
-        command = ['./../Release/verse_requestor'] + verse.split()
-        result = subprocess.run(command, capture_output=True, text=True)
-        return result.stdout.strip()
+        verse_utils_host = os.getenv('VERSE_UTILS_HOST', default="verse_utils:5001")
+        return VerseUtilsClient.post_request("http://" + verse_utils_host + "/verse_requestor", verse)

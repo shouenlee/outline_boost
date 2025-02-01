@@ -30,6 +30,7 @@ services:
       - verse_utils
     environment:
       - OLLAMA_HOST=http://host.docker.internal:11434
+      - VERSE_UTILS_HOST=verse_utils:5001
     networks:
       - outline_network
     profiles:
@@ -45,6 +46,7 @@ services:
       - ollama_service
     environment:
       - OLLAMA_HOST=ollama_service:11434
+      - VERSE_UTILS_HOST=verse_utils:5001
     networks:
       - outline_network
     profiles:

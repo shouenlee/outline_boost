@@ -29,11 +29,15 @@ If you do not have a dedicated GPU it is recommended to run ollama separately on
 
 `ollama serve`
 
+`docker compose --profile noGPU build` and 
+
 `docker compose --profile noGPU up`
 
 If you have a GPU, the default configuration is recommended.
 
-`docker compose --profile default up` or simply `docker compose up`
+`docker compose --profile default build` and
+
+`docker compose --profile default up`
 
 ### TODOS:
 - [X] Find ocr library/service to use
