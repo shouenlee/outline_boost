@@ -2,7 +2,7 @@
     "apiVersion": "2024-11-30",
     "modelId": "prebuilt-read",
     "stringIndexType": "textElements",
-    "content": "1. When we turn our heart to the Lord to behold and reflect the glory of the Lord with an unveiled face, He infuses us with the elements of what He is and what He has done.\n2. Thus, we are being transformed metabolically from one degree of glory to another degree of glory to have His life shape by His life power with His life essence.\nI. The transmitting Spirit transmits all that Christ is with all the riches of God into us for our participation-13:14:\n1. God is love, and this love is being transmitted as grace into us by the Spirit, who is the Transmitter.\n2. The Spirit is the fellowship, the communication, the circula- tion, the transmission of the grace of Christ with the love of the Father, transmitting the divine riches into our being for our enjoyment.\nsud I noyn For\n8\nBUS y-eindo jamy bort OUT)\n18 20 10 900",
+    "content": "1. When we turn our heart to the Lord to behold and reflect the glory of the Lord with an unveiled face, He infuses us with the elements of what He is and what He has done.\n2. Thus, we are being transformed metabolically from one degree of glory to another degree of glory to have His life shape by His life power with His life essence.\nI. The transmitting Spirit transmits all that Christ is with all the riches of God into us for our participation-13:14:\n1. God is love, and this love is being transmitted as grace into us by the Spirit, who is the Transmitter.\n2. The Spirit is the fellowship, the communication, the circula- tion, the transmission of the grace of Christ with the love of the Father, transmitting the divine riches into our being for our enjoyment.\nOS:& Basil sud I noyn For\n8\nBUS y-eindo jamy bort OUT)\n18 20 10 900",
     "pages": [
         {
             "pageNumber": 1,
@@ -2568,6 +2568,42 @@
                     }
                 },
                 {
+                    "content": "OS:&",
+                    "polygon": [
+                        2027,
+                        2112,
+                        2202,
+                        2112,
+                        2201,
+                        2193,
+                        2025,
+                        2189
+                    ],
+                    "confidence": 0.646,
+                    "span": {
+                        "offset": 769,
+                        "length": 4
+                    }
+                },
+                {
+                    "content": "Basil",
+                    "polygon": [
+                        2229,
+                        2111,
+                        2428,
+                        2106,
+                        2428,
+                        2193,
+                        2228,
+                        2193
+                    ],
+                    "confidence": 0.282,
+                    "span": {
+                        "offset": 774,
+                        "length": 5
+                    }
+                },
+                {
                     "content": "sud",
                     "polygon": [
                         2107,
@@ -2581,7 +2617,7 @@
                     ],
                     "confidence": 0.628,
                     "span": {
-                        "offset": 769,
+                        "offset": 780,
                         "length": 3
                     }
                 },
@@ -2599,7 +2635,7 @@
                     ],
                     "confidence": 0.188,
                     "span": {
-                        "offset": 773,
+                        "offset": 784,
                         "length": 1
                     }
                 },
@@ -2617,7 +2653,7 @@
                     ],
                     "confidence": 0.325,
                     "span": {
-                        "offset": 775,
+                        "offset": 786,
                         "length": 4
                     }
                 },
@@ -2635,7 +2671,7 @@
                     ],
                     "confidence": 0.536,
                     "span": {
-                        "offset": 780,
+                        "offset": 791,
                         "length": 3
                     }
                 },
@@ -2653,7 +2689,7 @@
                     ],
                     "confidence": 0.455,
                     "span": {
-                        "offset": 784,
+                        "offset": 795,
                         "length": 1
                     }
                 },
@@ -2671,7 +2707,7 @@
                     ],
                     "confidence": 0.261,
                     "span": {
-                        "offset": 786,
+                        "offset": 797,
                         "length": 3
                     }
                 },
@@ -2689,7 +2725,7 @@
                     ],
                     "confidence": 0.173,
                     "span": {
-                        "offset": 790,
+                        "offset": 801,
                         "length": 7
                     }
                 },
@@ -2707,7 +2743,7 @@
                     ],
                     "confidence": 0.063,
                     "span": {
-                        "offset": 798,
+                        "offset": 809,
                         "length": 4
                     }
                 },
@@ -2725,7 +2761,7 @@
                     ],
                     "confidence": 0.673,
                     "span": {
-                        "offset": 803,
+                        "offset": 814,
                         "length": 4
                     }
                 },
@@ -2743,7 +2779,7 @@
                     ],
                     "confidence": 0.606,
                     "span": {
-                        "offset": 808,
+                        "offset": 819,
                         "length": 4
                     }
                 },
@@ -2761,7 +2797,7 @@
                     ],
                     "confidence": 0.772,
                     "span": {
-                        "offset": 813,
+                        "offset": 824,
                         "length": 2
                     }
                 },
@@ -2779,7 +2815,7 @@
                     ],
                     "confidence": 0.687,
                     "span": {
-                        "offset": 816,
+                        "offset": 827,
                         "length": 2
                     }
                 },
@@ -2797,7 +2833,7 @@
                     ],
                     "confidence": 0.926,
                     "span": {
-                        "offset": 819,
+                        "offset": 830,
                         "length": 2
                     }
                 },
@@ -2815,7 +2851,7 @@
                     ],
                     "confidence": 0.649,
                     "span": {
-                        "offset": 822,
+                        "offset": 833,
                         "length": 3
                     }
                 }
@@ -3088,6 +3124,25 @@
                     ]
                 },
                 {
+                    "content": "OS:& Basil",
+                    "polygon": [
+                        1982,
+                        2106,
+                        2427,
+                        2106,
+                        2427,
+                        2192,
+                        1982,
+                        2193
+                    ],
+                    "spans": [
+                        {
+                            "offset": 769,
+                            "length": 10
+                        }
+                    ]
+                },
+                {
                     "content": "sud I noyn",
                     "polygon": [
                         2106,
@@ -3101,7 +3156,7 @@
                     ],
                     "spans": [
                         {
-                            "offset": 769,
+                            "offset": 780,
                             "length": 10
                         }
                     ]
@@ -3120,7 +3175,7 @@
                     ],
                     "spans": [
                         {
-                            "offset": 780,
+                            "offset": 791,
                             "length": 3
                         }
                     ]
@@ -3139,7 +3194,7 @@
                     ],
                     "spans": [
                         {
-                            "offset": 784,
+                            "offset": 795,
                             "length": 1
                         }
                     ]
@@ -3158,7 +3213,7 @@
                     ],
                     "spans": [
                         {
-                            "offset": 786,
+                            "offset": 797,
                             "length": 21
                         }
                     ]
@@ -3177,7 +3232,7 @@
                     ],
                     "spans": [
                         {
-                            "offset": 808,
+                            "offset": 819,
                             "length": 4
                         }
                     ]
@@ -3196,7 +3251,7 @@
                     ],
                     "spans": [
                         {
-                            "offset": 813,
+                            "offset": 824,
                             "length": 12
                         }
                     ]
@@ -3205,7 +3260,7 @@
             "spans": [
                 {
                     "offset": 0,
-                    "length": 825
+                    "length": 836
                 }
             ]
         }
@@ -3335,30 +3390,30 @@
             "spans": [
                 {
                     "offset": 769,
-                    "length": 14
+                    "length": 25
                 }
             ],
             "boundingRegions": [
                 {
                     "pageNumber": 1,
                     "polygon": [
-                        2106,
-                        2218,
+                        1982,
+                        2103,
+                        2758,
+                        2108,
                         2757,
-                        2221,
-                        2757,
-                        2312,
-                        2106,
-                        2309
+                        2313,
+                        1981,
+                        2307
                     ]
                 }
             ],
-            "content": "sud I noyn For"
+            "content": "OS:& Basil sud I noyn For"
         },
         {
             "spans": [
                 {
-                    "offset": 784,
+                    "offset": 795,
                     "length": 1
                 }
             ],
@@ -3382,7 +3437,7 @@
         {
             "spans": [
                 {
-                    "offset": 786,
+                    "offset": 797,
                     "length": 26
                 }
             ],
@@ -3406,7 +3461,7 @@
         {
             "spans": [
                 {
-                    "offset": 813,
+                    "offset": 824,
                     "length": 12
                 }
             ],
@@ -3447,13 +3502,23 @@
                     "length": 10
                 }
             ],
+            "locale": "pt",
+            "confidence": 0.8
+        },
+        {
+            "spans": [
+                {
+                    "offset": 780,
+                    "length": 10
+                }
+            ],
             "locale": "fr",
             "confidence": 0.6
         },
         {
             "spans": [
                 {
-                    "offset": 780,
+                    "offset": 791,
                     "length": 3
                 }
             ],
@@ -3463,7 +3528,7 @@
         {
             "spans": [
                 {
-                    "offset": 786,
+                    "offset": 797,
                     "length": 21
                 }
             ],
@@ -3473,7 +3538,7 @@
         {
             "spans": [
                 {
-                    "offset": 808,
+                    "offset": 819,
                     "length": 4
                 }
             ],

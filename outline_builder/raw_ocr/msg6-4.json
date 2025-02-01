@@ -563,7 +563,7 @@
                         1782,
                         352
                     ],
-                    "confidence": 0.992,
+                    "confidence": 0.99,
                     "span": {
                         "offset": 161,
                         "length": 11
@@ -4433,7 +4433,7 @@
                         515,
                         2490
                     ],
-                    "confidence": 0.994,
+                    "confidence": 0.993,
                     "span": {
                         "offset": 1297,
                         "length": 2
