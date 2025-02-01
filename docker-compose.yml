@@ -6,16 +6,21 @@ services:
       - outline_network
     ports:
       - "5001:5001"
+    profiles:
+      - default
+      - noGPU
 
-  # ollama_service:
-  #   build: ./ollama_service
-  #   container_name: ollama_service
-  #   ports:
-  #     - "11434:11434"
-  #   networks:
-  #     - outline_network
+  ollama_service:
+    build: ./ollama_service
+    container_name: ollama_service
+    ports:
+      - "11434:11434"
+    networks:
+      - outline_network
+    profiles:
+      - default
 
-  outline_builder:
+  outline_builder_no_gpu:
     build: ./outline_builder
     # command: tail -f /dev/null
     volumes:
@@ -23,11 +28,27 @@ services:
     container_name: outline_builder
     depends_on:
       - verse_utils
-    #  - ollama_service
     environment:
-      - OLLAMA_HOST=http://host.docker.internal:11434 #ollama_service:11434
+      - OLLAMA_HOST=http://host.docker.internal:11434
     networks:
       - outline_network
+    profiles:
+      - noGPU
+
+  outline_builder:
+    build: ./outline_builder
+    volumes:
+      - ./outline_builder:/app
+    container_name: outline_builder
+    depends_on:
+      - verse_utils
+      - ollama_service
+    environment:
+      - OLLAMA_HOST=ollama_service:11434
+    networks:
+      - outline_network
+    profiles:
+      - default
 
 networks:
   outline_network:
