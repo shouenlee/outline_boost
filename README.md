@@ -1,5 +1,8 @@
 # outline_boost
 
+gong1 zhen4
+gong kai zhen ming
+
 vs dev-containers: https://code.visualstudio.com/docs/devcontainers/create-dev-container
 
 swift base image: https://github.com/swiftlang/swift-docker/blob/f44060cdf224436060d2df98a5c3f63f2600de63/6.0/ubuntu/24.04/Dockerfile
@@ -22,7 +25,15 @@ To run this project end-to-end:
 3. Run `docker compose up` in the outline_boost directory.
 4. json and md artifacts will be generated in `outline_builder`.
 
-If you do not have a dedicated GPU it is recommended to run ollama separately on your host machine. If you have a GPU, the provided configuration is recommended.
+If you do not have a dedicated GPU it is recommended to run ollama separately on your host machine with. 
+
+`ollama serve`
+
+`docker compose --profile noGPU up`
+
+If you have a GPU, the default configuration is recommended.
+
+`docker compose --profile default up` or simply `docker compose up`
 
 ### TODOS:
 - [X] Find ocr library/service to use
