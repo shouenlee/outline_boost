@@ -3,5 +3,4 @@ FROM ollama/ollama:latest
 
 EXPOSE 11434
 
-RUN ollama serve & sleep 5
-RUN ollama pull Mistral
+Run nohup bash -c "ollama serve &" && sleep 5 && ollama pull mistral
