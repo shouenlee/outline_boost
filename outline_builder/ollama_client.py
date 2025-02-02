@@ -17,7 +17,7 @@ class OllamaClient():
         ]
         self.prompt_counter = 0
 
-        ollama_host = os.getenv('OLLAMA_HOST', "localhost:11434")
+        ollama_host = os.getenv('OLLAMA_HOST', default="ollama_service:11434") #Ollama must be running on port 11434
         self.client = ollama.Client(host=ollama_host)
 
     def prompt(self, prompt: str) -> str:
