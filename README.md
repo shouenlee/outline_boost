@@ -17,6 +17,7 @@ azure ai document intelligence sdk: https://learn.microsoft.com/en-us/python/api
 
 ollama python examples: https://github.com/ollama/ollama-python/tree/main/examples
 
+nicegui: https://nicegui.io/
 
 ### Notes
 To run this project end-to-end:
