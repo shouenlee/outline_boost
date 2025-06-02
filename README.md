@@ -1,7 +1,6 @@
 # outline_boost
 
 gong1 zhen4
-gong kai zhen ming
 
 vs dev-containers: https://code.visualstudio.com/docs/devcontainers/create-dev-container
 
